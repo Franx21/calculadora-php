@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\calculadoraController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +14,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/WELCOME'   , function () {
+Route::get('/CALCULADORA'   , function () {
     return view('welcome');
 });
+
+Route::post('/calculadora', [calculadoraController::class, 'calculate'])->name('calculadora.calculate');

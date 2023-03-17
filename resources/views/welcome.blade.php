@@ -20,7 +20,10 @@
                         <input type="text" class="text-right" name="number1" id="number1" placeholder="numero 1">
                         <input type="text" class="text-center" name="operador" id="operador" placeholder="operador">
                         <input type="text" class="text-left" name="number2" id="number2" placeholder="numero 2">
-                        <input type="text" class="col-span-3 text-right" name="resultado" id="resultado" placeholder="= {{ $resul }}">
+                        <input type="text" class="col-span-3 text-right" name="resultado" id="resultado"
+                            placeholder="= @php
+                                echo @$resul
+                            @endphp">
                     </div>
                     <button
                         class="max-w-sm p-3 bg-white hover:bg-gray-700 border dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-grey-700">7</button>
@@ -57,8 +60,8 @@
                         class="max-w-sm p-3 bg-white hover:bg-gray-700 border dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-grey-700">.</button>
                     <button
                         class="max-w-sm p-3 bg-white hover:bg-gray-700 border dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-grey-700">0</button>
-                    <button
-                    type="submit" class="max-w-sm p-3 bg-white hover:bg-green-700 border dark:border-green-700 dark:bg-green-800 dark:hover:bg-green-700">=</button>
+                    <button type="submit"
+                        class="max-w-sm p-3 bg-white hover:bg-green-700 border dark:border-green-700 dark:bg-green-800 dark:hover:bg-green-700">=</button>
                 </div>
             </div>
         </div>

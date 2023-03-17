@@ -18,4 +18,4 @@ Route::get('/CALCULADORA'   , function () {
     return view('welcome');
 });
 
-Route::post('/calculadora', [calculadoraController::class, 'calculate'])->name('calculadora.calculate');
+Route::post('/CALCULADORA', [calculadoraController::class, 'calculate'])->name('calculadora.calculate');

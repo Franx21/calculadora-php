@@ -15,22 +15,22 @@ class calculadoraController extends Controller
         if ($op == "+") {
             $resultado = $num1 + $num2;
             $resul = $resultado;
-            return view('welcome')->with('resul', $resul);
+            return view('welcome')->with('resul', $resul)->with('num1', $num1)->with('num2', $num2)->with('op', $op);
         }elseif ($op == "-") {
             $resultado = $num1 - $num2;
             $resul = $resultado;
-            return view('welcome')->with('resul', $resul);
+            return view('welcome')->with('resul', $resul)->with('num1', $num1)->with('num2', $num2)->with('op', $op);
         }elseif ($op == "*") {
             $resultado = $num1 * $num2;
             $resul = $resultado;
-            return view('welcome')->with('resul', $resul);
+            return view('welcome')->with('resul', $resul)->with('num1', $num1)->with('num2', $num2)->with('op', $op);
         }elseif ($op == "/") {
             $resultado = $num1 / $num2;
             $resul = $resultado;
-            return view('welcome')->with('resul', $resul);
+            return view('welcome')->with('resul', $resul)->with('num1', $num1)->with('num2', $num2)->with('op', $op);
         }else{
             $resul = 0;
-            return view('welcome')->with('resul', $resul);
+            return view('welcome')->with('resul', $resul)->with('num1', $num1)->with('num2', $num2)->with('op', $op);
         }
     }
 }

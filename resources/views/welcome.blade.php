@@ -21,7 +21,9 @@
                         <input type="text" class="text-center" name="operador" id="operador" placeholder="operador">
                         <input type="text" class="text-left" name="number2" id="number2" placeholder="numero 2">
                         <input type="text" class="col-span-3 text-right" name="resultado" id="resultado"
-                            placeholder="= @php
+                            placeholder="@php
+                                echo @$num1." ".@$op." ".@$num2
+                            @endphp = @php
                                 echo @$resul
                             @endphp">
                     </div>
